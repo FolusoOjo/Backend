@@ -8,5 +8,6 @@ userRouter.get("/", (req, res) => {
 });
 
 userRouter.post("/signup", UserService().SignUserUp);
+userRouter.post("/signin", UserService().SignUserIn);
 
 module.exports = userRouter;
